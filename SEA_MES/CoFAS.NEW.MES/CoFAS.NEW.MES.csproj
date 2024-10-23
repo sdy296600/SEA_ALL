@@ -461,6 +461,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Hansolicon.ico" />
+    <None Include="Resources\sea_logo.png" />
     <None Include="Resources\settings.png" />
     <None Include="Resources\import.png" />
     <None Include="Resources\save.png" />

@@ -1071,16 +1071,6 @@ namespace CoFAS.NEW.MES.POP.Properties {
         }
         
         /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap KakaoTalk_20240416_165747171 {
-            get {
-                object obj = ResourceManager.GetObject("KakaoTalk_20240416_165747171", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
         ///&lt;root&gt;
         ///  &lt;!-- 
@@ -1617,6 +1607,16 @@ namespace CoFAS.NEW.MES.POP.Properties {
         internal static System.Drawing.Bitmap saveto_16x16 {
             get {
                 object obj = ResourceManager.GetObject("saveto_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap sea_logo {
+            get {
+                object obj = ResourceManager.GetObject("sea_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

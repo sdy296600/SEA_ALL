@@ -60,7 +60,7 @@ namespace CoFAS.NEW.MES.POP
             // pictureBox1
             // 
             pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            pictureBox1.Image = global::CoFAS.NEW.MES.POP.Properties.Resources.KakaoTalk_20240416_165747171;
+            pictureBox1.Image = global::CoFAS.NEW.MES.POP.Properties.Resources.sea_logo;
             pictureBox1.Location = new System.Drawing.Point(12, 15);
             pictureBox1.Margin = new System.Windows.Forms.Padding(11, 14, 11, 14);
             pictureBox1.Name = "pictureBox1";

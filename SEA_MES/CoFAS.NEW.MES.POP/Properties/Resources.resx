@@ -334,8 +334,8 @@
   <data name="_128x128_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\128x128_refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KakaoTalk_20240416_165747171" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KakaoTalk_20240416_165747171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sea_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sea_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

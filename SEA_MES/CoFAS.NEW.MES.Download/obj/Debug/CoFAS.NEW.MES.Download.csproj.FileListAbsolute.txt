@@ -1,0 +1,17 @@
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\bin\Debug\Hansolicon.ico
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\bin\Debug\CoFAS.NEW.MES.Download.exe.config
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\bin\Debug\CoFAS.NEW.MES.Download.exe
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\bin\Debug\CoFAS.NEW.MES.Download.pdb
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.FormDownload.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.FormDownload_ENIB.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.FormDownload_세아_MES.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.FormDownload_세아_간판POP.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.FormDownload_세아_POP.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.FormDownload_Eaton.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.FormDownload_Hansol.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.FormDownload_Tapex.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.Properties.Resources.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.csproj.GenerateResource.cache
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.csproj.CoreCompileInputs.cache
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.exe
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.pdb

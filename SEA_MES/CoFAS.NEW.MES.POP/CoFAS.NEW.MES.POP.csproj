@@ -752,7 +752,7 @@
     <None Include="Resources\setting1.png" />
     <None Include="Resources\setting.png" />
     <None Include="Resources\save_32x322.png" />
-    <None Include="Resources\KakaoTalk_20240416_165747171.png" />
+    <None Include="Resources\sea_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoFAS.NEW.MES.Core\CoFAS.NEW.MES.Core.csproj">

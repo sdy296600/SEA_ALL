@@ -119,8 +119,8 @@ namespace CoFAS.NEW.MES.Core.Function
                         pCellType.ItemData = itemData;
                         //해당셀의 Text값들..
                         pCellType.Items = items;
-                        pCellType.EditorValue = EditorValue.ItemData;
-                        //pCellType.EditorValue = FarPoint.Win.Spread.CellType.EditorValue.ItemData;
+                        //pCellType.EditorValue = EditorValue.ItemData;
+                        pCellType.EditorValue = FarPoint.Win.Spread.CellType.EditorValue.ItemData;
                     }
                     else
                     {
@@ -134,7 +134,7 @@ namespace CoFAS.NEW.MES.Core.Function
                 pCellType.Editable = false;
                 pCellType.ListAlignment = FarPoint.Win.ListAlignment.Left;
                 pCellType.ListOffset = 0;
-                // pCellType.ListWidth = int.Parse(pLength);
+                //pCellType.MaxLength = int.Parse(pLength);
                 pCellType.MaxDrop = 10;
                 pfpSpread.Sheets[pSheet].Columns[pCol].CellType = pCellType;
 
@@ -628,6 +628,7 @@ namespace CoFAS.NEW.MES.Core.Function
         public static void SpreadColumnAddDisplayText(FpSpread pfpSpread, int pSheet, int pCol, string pLength)
         {
             DisplayTextCellType pCellType = new DisplayTextCellType();
+            //int MaxLength = int.Parse(pLength);
             int MaxLength = int.Parse(pLength);
             pCellType.MaxLength = MaxLength;
             pCellType.Multiline = false;

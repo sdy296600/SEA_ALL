@@ -274,7 +274,7 @@ namespace CoFAS.NEW.MES
             this._imgBox01.BackColor = System.Drawing.Color.Transparent;
             this._imgBox01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._imgBox01.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._imgBox01.Image = global::CoFAS.NEW.MES.Properties.Resources.logo_edit_removebg_preview;
+            this._imgBox01.Image = global::CoFAS.NEW.MES.Properties.Resources.sea_logo;
             this._imgBox01.Location = new System.Drawing.Point(0, 0);
             this._imgBox01.Margin = new System.Windows.Forms.Padding(0);
             this._imgBox01.Name = "_imgBox01";

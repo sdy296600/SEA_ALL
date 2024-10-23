@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.POP\\CoFAS.NEW.MES.POP.csproj": {}
+  },
+  "projects": {
+    "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.Core\\CoFAS.NEW.MES.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.Core\\CoFAS.NEW.MES.Core.csproj",
+        "projectName": "CoFAS.NEW.MES.Core",
+        "projectPath": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.Core\\CoFAS.NEW.MES.Core.csproj",
+        "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
+        "outputPath": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[15.0.4795.1001, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.POP\\CoFAS.NEW.MES.POP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.POP\\CoFAS.NEW.MES.POP.csproj",
+        "projectName": "CoFAS.NEW.MES.POP",
+        "projectPath": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.POP\\CoFAS.NEW.MES.POP.csproj",
+        "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
+        "outputPath": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.POP\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.Core\\CoFAS.NEW.MES.Core.csproj": {
+                "projectPath": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.Core\\CoFAS.NEW.MES.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

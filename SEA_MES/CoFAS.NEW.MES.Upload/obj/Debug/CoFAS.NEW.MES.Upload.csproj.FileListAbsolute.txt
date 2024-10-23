@@ -1,0 +1,11 @@
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\bin\Debug\CoFAS.NEW.MES.Upload.exe.config
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\bin\Debug\CoFAS.NEW.MES.Upload.exe
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\bin\Debug\CoFAS.NEW.MES.Upload.pdb
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.Form_Upload.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.Properties.Resources.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.frmBase.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.frmWaitAsyncForm.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.csproj.GenerateResource.cache
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.csproj.CoreCompileInputs.cache
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.exe
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.pdb

@@ -1,0 +1,265 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "FontAwesome.Sharp/6.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System.Windows.Forms",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FontAwesome.Sharp.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
+      "CoFAS.NEW.MES.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1001"
+        },
+        "compile": {
+          "bin/placeholder/CoFAS.NEW.MES.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoFAS.NEW.MES.Core.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "FontAwesome.Sharp/6.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System.Windows.Forms",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FontAwesome.Sharp.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
+      "CoFAS.NEW.MES.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1001"
+        },
+        "compile": {
+          "bin/placeholder/CoFAS.NEW.MES.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoFAS.NEW.MES.Core.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "FontAwesome.Sharp/6.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System.Windows.Forms",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FontAwesome.Sharp.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
+      "CoFAS.NEW.MES.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1001"
+        },
+        "compile": {
+          "bin/placeholder/CoFAS.NEW.MES.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoFAS.NEW.MES.Core.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "FontAwesome.Sharp/6.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System.Windows.Forms",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FontAwesome.Sharp.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
+      "CoFAS.NEW.MES.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1001"
+        },
+        "compile": {
+          "bin/placeholder/CoFAS.NEW.MES.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoFAS.NEW.MES.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FontAwesome.Sharp/6.1.1": {
+      "sha512": "p6dnSMcKQg790vGSJgvFk6S8gXQnEcCugfaJ21WFxZz9h+9KyxL+sX6kbGv8p4iVoX/e5BAMnTV4QJFJvx8QxQ==",
+      "type": "package",
+      "path": "fontawesome.sharp/6.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.6.1.1.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net40/FontAwesome.Sharp.dll",
+        "lib/net45/FontAwesome.Sharp.dll",
+        "lib/net472/FontAwesome.Sharp.dll",
+        "lib/net48/FontAwesome.Sharp.dll",
+        "lib/net5.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
+      ]
+    },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+      "sha512": "cuvqi/U5MYSM0gvR2l90q0m/urRgmg69EiwP5VWp1RcaJ0YT5G26Va5LaOZ3KJFc22FNihS5CUjeePUp2YpGQA==",
+      "type": "package",
+      "path": "microsoft.office.interop.excel/15.0.4795.1001",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "lib/netstandard2.0/Microsoft.Office.Interop.Excel.dll",
+        "microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512",
+        "microsoft.office.interop.excel.nuspec"
+      ]
+    },
+    "CoFAS.NEW.MES.Core/1.0.0": {
+      "type": "project",
+      "path": "../CoFAS.NEW.MES.Core/CoFAS.NEW.MES.Core.csproj",
+      "msbuildProject": "../CoFAS.NEW.MES.Core/CoFAS.NEW.MES.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "CoFAS.NEW.MES.Core >= 1.0.0",
+      "FontAwesome.Sharp >= 6.1.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\winni\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES\\CoFAS.NEW.MES.csproj",
+      "projectName": "CoFAS.NEW.MES",
+      "projectPath": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES\\CoFAS.NEW.MES.csproj",
+      "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
+      "outputPath": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {
+            "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.Core\\CoFAS.NEW.MES.Core.csproj": {
+              "projectPath": "E:\\SEA_ALL\\SEA_MES\\CoFAS.NEW.MES.Core\\CoFAS.NEW.MES.Core.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "FontAwesome.Sharp": {
+            "target": "Package",
+            "version": "[6.1.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
