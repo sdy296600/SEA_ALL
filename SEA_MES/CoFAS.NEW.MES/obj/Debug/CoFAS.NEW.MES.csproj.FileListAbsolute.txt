@@ -1,3 +1,4 @@
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.Charts.v17.2.Core.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\MES_양식_PACKING LIST.xlsx
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\MES_양식_Profoma_Invoice_해외.xlsx
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\MES_양식_거래명세서(국내).xlsx
@@ -43,7 +44,6 @@ E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.DataAccess.v17.2.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.XtraLayout.v17.2.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.XtraNavBar.v17.2.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.DataAccess.v17.2.UI.dll
-E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.Charts.v17.2.Core.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.Pdf.v17.2.Core.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES\bin\Debug\DevExpress.Xpo.v17.2.dll

@@ -1,3 +1,6 @@
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\FarPoint.Win.Spread.dll
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.OPC_UA_dps.resources
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.exe
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\CoFAS.NEW.MES.DPS.exe.config
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\CoFAS.NEW.MES.DPS.exe
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\CoFAS.NEW.MES.DPS.pdb
@@ -16,7 +19,6 @@ E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\CoFAS.NEW.MES.Core.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\MySql.Data.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\DevExpress.Utils.v17.2.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\DevExpress.XtraEditors.v17.2.dll
-E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\FarPoint.Win.Spread.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\DevExpress.XtraSpreadsheet.v17.2.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\DevExpress.Spreadsheet.v17.2.Core.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\bin\Debug\DevExpress.Data.v17.2.dll
@@ -55,10 +57,8 @@ E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.Check_API_DPS.r
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.frm_OPC_List.resources
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.MQTT_DPS.resources
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.TCP_IP_dps.resources
-E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.OPC_UA_dps.resources
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.Properties.Resources.resources
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.csproj.GenerateResource.cache
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.csproj.CoreCompileInputs.cache
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.csproj.CopyComplete
-E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.exe
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.DPS\obj\Debug\CoFAS.NEW.MES.DPS.pdb

@@ -4402,10 +4402,10 @@ where RESOURCE_NO = '{pfpSpread.Sheets[0].GetValue(e.Row, "품번").ToString()}'
                             pfpSpread.Sheets[0].Columns[i].Visible = false;
                         }
 
-                        // 일기전용,수정가능설정
+                        // 읽기전용,수정가능설정
                         switch (pLocked)
                         {
-                            case "Y":  // 일기전용
+                            case "Y":  // 읽기전용
                                 pfpSpread.Sheets[0].Columns[i].Locked = true;
                                 pfpSpread.Sheets[0].Columns[i].BackColor = Color.FromArgb(240, 240, 236);
                                 break;

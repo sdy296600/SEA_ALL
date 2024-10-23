@@ -3,6 +3,7 @@ E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Core\bin\Debug\CoFAS.NEW.MES.Core.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Core\bin\Debug\CoFAS.NEW.MES.Core.pdb
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Core\bin\Debug\Microsoft.Office.Interop.Excel.dll
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Core\bin\Debug\DevExpress.XtraSpreadsheet.v17.2.dll
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Core\obj\Debug\CoFAS.NEW.MES.Core.csproj.AssemblyReference.cache
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Core\obj\Debug\CoFAS.NEW.MES.Core.frmBaseNone.resources
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Core\obj\Debug\CoFAS.NEW.MES.Core.frmMessageBox.resources
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Core\obj\Debug\CoFAS.NEW.MES.Core.frmMessageBoxYN.resources

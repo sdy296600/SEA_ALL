@@ -539,7 +539,7 @@ namespace CoFAS.NEW.MES.POP
                                      ifnull(WORK_WARMUPCNT,0) as WORK_WARMUPCNT
                                     ,ifnull(WORK_ERRCOUNT,0)  as WORK_ERRCOUNT
                                     ,ifnull(WORK_OKCNT,0)     as WORK_OKCNT
-                                    ,ifnull((WORK_WARMUPCNT+WORK_ERRCOUNT+WORK_OKCNT),0) AS all_Qty
+                                    ,ifnull((WORK_ERRCOUNT+WORK_OKCNT),0) AS all_Qty
                                FROM work_performance
                               where RESOURCE_NO = '{_p품번}' AND LOT_NO ='{_pLOT}' AND WORK_PERFORMANCE_ID = '{_p실적}'";
 
@@ -1035,11 +1035,6 @@ namespace CoFAS.NEW.MES.POP
                 , _p실적))
                 {
                     if (popup.ShowDialog() == DialogResult.OK)
-                    {
-
-                    }
-
-
 
                     for (int i = 0; i < fpSub.Sheets[0].RowCount; i++)
                     {
@@ -1081,7 +1076,7 @@ namespace CoFAS.NEW.MES.POP
                     return;
                 }
 
-                decimal qty = 0;
+                int planQty = 0;
 
                 int row = 0;
 
@@ -1091,28 +1086,39 @@ namespace CoFAS.NEW.MES.POP
                         fpMain.Sheets[0].GetValue(i, "LOT           ".Trim()).ToString().Trim() == _pLOT)
                     {
                         row = i;
-                        qty = Convert.ToDecimal(fpMain.Sheets[0].GetValue(i, "ORDER_QTY           ".Trim()));
+                        planQty = Convert.ToInt32(fpMain.Sheets[0].GetValue(i, "ORDER_QTY           ".Trim()));
                     }
                 }
 
 
+       
+                if (_시작.DateTime.Hour >= 8 && _시작.DateTime.Hour < 20)
+                {
+                    _교대조.Text = "주간";
+                }
+                else
+                {
+                    _교대조.Text = "야간";
+                }
+
+                int comQty = (Convert.ToInt32(_간판발행수.Text) * Convert.ToInt32(_포장수량.Text));
                 DateTime dateTime = DateTime.Now;
                 DataTable dt = new MS_DBClass(utility.My_Settings_Get()).USP_WorkPerformance_A10(
-                 _p호기  
-                ,_작업일자.DateTime.ToString("yyyyMMdd")
-                ,_p품번
-                ,_pLOT
-                ,"주"
-                ,"정상작업"
-                ,Convert.ToDecimal(_미포장수량.Text)
-                ,"0"
-                ,_시작.DateTime.ToString("yyyy-MM-dd HH:mm:ss")
-                ,null
-                ,"admin"
-                ,dateTime.ToString("yyyy-MM-dd HH:mm:ss")
-                ,"admin"
-                ,dateTime.ToString("yyyy-MM-dd HH:mm:ss")
-                ,txt_작업인원.Text);
+                  _p호기  
+                , _작업일자.DateTime.ToString("yyyyMMdd")
+                , _p품번
+                , _pLOT
+                , _교대조.Text
+                , _작업코드.Text
+                , comQty
+                , "0"
+                , _시작.DateTime.ToString("yyyy-MM-dd HH:mm:ss")
+                , null
+                , "admin"
+                , dateTime.ToString("yyyy-MM-dd HH:mm:ss")
+                , "admin"
+                , dateTime.ToString("yyyy-MM-dd HH:mm:ss")
+                , txt_작업인원.Text);
 
                 string id = dt.Rows[0]["ID"].ToString();
 
@@ -1143,7 +1149,7 @@ namespace CoFAS.NEW.MES.POP
                                ,'{dt.Rows[0]["LOT_NO"].ToString()}'
                                ,'{Convert.ToDateTime(dt.Rows[0]["ORDER_DATE"]).ToString("yyyy-MM-dd HH:mm:ss")}'
                                ,'{dt.Rows[0]["SHIFT"].ToString()}'
-                               ,'{qty}'
+                               ,'{planQty.ToString()}'
                                ,'가동'
                                ,'{dt.Rows[0]["WORK_CODE"].ToString()}'
                                ,'{dt.Rows[0]["QTY_COMPLETE"].ToString()}'
