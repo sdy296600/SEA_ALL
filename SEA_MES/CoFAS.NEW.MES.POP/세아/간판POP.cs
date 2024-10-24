@@ -85,6 +85,7 @@ namespace CoFAS.NEW.MES.POP
 
         public string _p실적 = string.Empty;
         public string _pLOT = string.Empty;
+        public string prodBcdQty = string.Empty;
         #endregion
 
         #region ○ 생성자
@@ -173,8 +174,9 @@ namespace CoFAS.NEW.MES.POP
         {
             try
             {
+                
                 int 포장수량 = 0;
-
+                prodBcdQty = "0";
 
                 if (!int.TryParse(txt_포장수량.Text, out 포장수량))
                 {
@@ -223,6 +225,23 @@ namespace CoFAS.NEW.MES.POP
                             print(라벨);
                             
                         }
+                        string sql = $@"SELECT                       
+                          ISNULL(SUM(ISNULL(P_QTY,0)),0) AS P_QTY
+                           FROM [HS_MES].[dbo].[PRODUCT_BARCODE]
+                           WHERE 1=1 
+                         AND WORK_PERFORMANCE_ID = {_p실적}";
+
+                        /// INNER JOIN [sea_mfg].[dbo].[address] B ON A.VENDOR_NO = B.address_key";
+                        //WHERE BARCODE_DATE >= '{DateTime.Now.ToString("yyyy-MM-dd")}'";
+
+                        DataTable dt2 = new MS_DBClass(utility.My_Settings_Get()).SELECT2(sql);
+
+                        sql = $@"UPDATE [dbo].[WORK_PERFORMANCE]
+                                  SET 
+                                      [QTY_COMPLETE] = '{dt2.Rows[0]["P_QTY"].ToString()}'
+                                     ,[UP_DATE]  = '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}'
+                                WHERE ID = '{_p실적}'";
+                        DataTable _DataTable = new CoreBusiness().SELECT(sql);
 
                     }
                 }
@@ -312,6 +331,8 @@ namespace CoFAS.NEW.MES.POP
 
         private void button5_Click(object sender, EventArgs e)
         {
+            prodBcdQty = "0";
+
             string sql = $@"SELECT                       
                            'False' as CK
                           ,A.*
@@ -328,7 +349,18 @@ namespace CoFAS.NEW.MES.POP
 
             DataTable dt = new MS_DBClass(utility.My_Settings_Get()).SELECT2(sql);
 
-            CoFAS.NEW.MES.Core.Function.Core.DisplayData_Set(dt, fpMain);
+            Core.Function.Core.DisplayData_Set(dt, fpMain);
+
+            int row;
+            for (int i = 0; i < fpMain.Sheets[0].RowCount; i++)
+            {
+                if (fpMain.Sheets[0].GetValue(i, "WORK_PERFORMANCE_ID   ".Trim()).ToString().Trim() == _p실적 &&
+                    fpMain.Sheets[0].GetValue(i, "LOT           ".Trim()).ToString().Trim() == _pLOT)
+                {
+                    row = i;
+                    prodBcdQty = fpMain.Sheets[0].GetValue(row, "P_QTY   ".Trim()).ToString();
+                }
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)

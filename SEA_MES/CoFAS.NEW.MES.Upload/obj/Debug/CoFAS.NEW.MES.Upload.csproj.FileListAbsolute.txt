@@ -9,3 +9,4 @@ E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.csproj.Ge
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.csproj.CoreCompileInputs.cache
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.exe
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.pdb
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Upload\obj\Debug\CoFAS.NEW.MES.Upload.csproj.AssemblyReference.cache

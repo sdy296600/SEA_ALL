@@ -15,3 +15,4 @@ E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.cspro
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.csproj.CoreCompileInputs.cache
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.exe
 E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.pdb
+E:\SEA_ALL\SEA_MES\CoFAS.NEW.MES.Download\obj\Debug\CoFAS.NEW.MES.Download.csproj.AssemblyReference.cache
