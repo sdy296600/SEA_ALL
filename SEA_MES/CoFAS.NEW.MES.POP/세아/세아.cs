@@ -437,6 +437,7 @@ namespace CoFAS.NEW.MES.POP
 
                 _포장수량.Text = "0";
                 _미포장수량.Text = "0";
+                _총미포장.Text = "0";
 
                 txt_작업인원.Text = "0";
 
