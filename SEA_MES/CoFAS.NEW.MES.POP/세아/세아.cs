@@ -551,7 +551,7 @@ namespace CoFAS.NEW.MES.POP
                         _lbl_양품.Text = pDataTable5.Rows[0]["WORK_OKCNT"].ToString();
                         _lbl_예열타.Text = pDataTable5.Rows[0]["WORK_WARMUPCNT"].ToString();
                         _lbl_불량.Text = pDataTable5.Rows[0]["WORK_ERRCOUNT"].ToString();
-                        _미포장수량.Text = _lbl_양품.Text ;
+                        _미포장수량.Text = _lbl_양품.Text;
 
                     }
                     else
@@ -1090,8 +1090,8 @@ namespace CoFAS.NEW.MES.POP
                     }
                 }
 
+                _시작.DateTime = DateTime.Now;
 
-       
                 if (_시작.DateTime.Hour >= 8 && _시작.DateTime.Hour < 20)
                 {
                     _교대조.Text = "주간";
@@ -1220,6 +1220,7 @@ namespace CoFAS.NEW.MES.POP
                     return;
                 }
 
+                String comQty = (Convert.ToInt32(_간판발행수.Text) * Convert.ToInt32(_포장수량.Text)).ToString();
                 DateTime startTime = _시작.DateTime;
                 DateTime endTime = _종료.DateTime;
 
@@ -1227,23 +1228,28 @@ namespace CoFAS.NEW.MES.POP
                 TimeSpan difference = endTime - startTime;
                 string sql =$@"UPDATE [dbo].[WORK_PERFORMANCE]
                                   SET 
-                                      [QTY_COMPLETE] = '{ok_qty}'
+                                      [QTY_COMPLETE] = '{comQty}'
                                      ,[WORK_TIME]    = '{difference.TotalSeconds}'
                                      ,[END_TIME]     = '{_종료.DateTime.ToString("yyyy-MM-dd HH:mm:ss")}'
                                 WHERE ID = '{_p실적}'";
                 DataTable _DataTable = new CoreBusiness().SELECT(sql);
 
-                DataTable dt = new MS_DBClass(utility.My_Settings_Get()).USP_BadPerformance_A10(
+
+
+                 new MS_DBClass(utility.My_Settings_Get()).USP_BadPerformance_A10(
                      DateTime.Now.ToString("yyyyMMdd")
                     ,fpSub.Sheets[0].GetValue(row, "RESOURCE_NO    ".Trim()).ToString()
                     ,"Y"
-                    ,_lbl_양품.Text
-                    ,"T"
+                    , comQty
+                    , "T"
                     ,fpSub.Sheets[0].GetValue(row, "ORDER_NO    ".Trim()).ToString()
                     ,fpSub.Sheets[0].GetValue(row, "LOT_NO    ".Trim()).ToString()
                     ,"ADMIN"
                     ,"ADMIN"
                     );
+
+                
+
 
                 sql = $@"UPDATE work_performance
                          SET END_TIME = '{startTime.ToString("yyyy-MM-dd HH:mm:ss")}'
@@ -1253,6 +1259,8 @@ namespace CoFAS.NEW.MES.POP
                          AND LOT_NO      = '{fpSub.Sheets[0].GetValue(row, "LOT_NO         ".Trim()).ToString()}'";
 
                 new MY_DBClass().SELECT_DataTable(sql);
+
+
 
 
                 sql = $@"select ISNULL(AVG(CAST(B.VALUE AS DECIMAL(10, 2))),0) AS VALUE,A.code_name as TYPE

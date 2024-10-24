@@ -482,6 +482,23 @@ namespace CoFAS.NEW.MES.POP
         public DateTime UP_DATE { get; set; }
 
     }
+    public class PACK_PROD
+    {
+        public int WORK_PERFORMANCE_ID { get; set; }
+        public string MACHINE_NO { get; set; }
+        public string ORDER_NO { get; set; }
+        public string RESOURCE_NO { get; set; }
+        public string LOT_NO { get; set; }
+        public int COMPLETE_QTY { get; set; }
+        public int QTY { get; set; }
+        public DateTime START_TIME { get; set; }
+        public DateTime END_TIME { get; set; }
+        public string REG_USER { get; set; }
+        public DateTime REG_DATE { get; set; }
+        public string UP_USER { get; set; }
+        public DateTime UP_DATE { get; set; }
+
+    }
 
 }
 

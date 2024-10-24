@@ -639,7 +639,7 @@ namespace CoFAS.NEW.MES.POP.Function
                 return null;
             }
         }
-
+    
         public void PRODUCTION_RESULT(List<PRODUCTION_RESULT> list)
         {
             try
@@ -1593,6 +1593,76 @@ namespace CoFAS.NEW.MES.POP.Function
                 return null;
             }
         }
+        public void PACK_PROD(List<PACK_PROD> list)
+        {
+            try
+            {
+                SqlConnection con;
+                con = new SqlConnection(this.ConnectionString);
+                SqlCommand cmd;
+                cmd = new SqlCommand();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = con;
+                con.Open();
+
+                foreach (PACK_PROD item in list)
+                {
+
+
+                      cmd.CommandText = $@"INSERT INTO [dbo].[PACK_PROD]
+                                                ( [WORK_PERFORMANCE_ID]
+                                                , [MACHINE_NO]
+                                                , [ORDER_NO]
+                                                , [RESOURCE_NO]
+                                                , [LOT_NO]
+                                                , [COMPLETE_QTY]
+                                                , [QTY]
+                                                , [START_TIME]
+                                                , [END_TIME]
+                                                , [REG_USER]
+                                                , [REG_DATE]
+                                                , [UP_USER]
+                                                , [UP_DATE])
+                                           VALUES
+                                                ( @WORK_PERFORMANCE_ID
+                                                , @MACHINE_NO
+                                                , @ORDER_NO
+                                                , @RESOURCE_NO
+                                                , @LOT_NO
+                                                , @COMPLETE_QTY
+                                                , @QTY
+                                                , GETDATE()
+                                                , @END_TIME
+                                                , @REG_USER
+                                                , GETDATE()
+                                                , @UP_USER
+                                                , GETDATE())";
+                    //( 
+                    // '{item.WORK_PERFORMANCE_ID}'
+                    //,'{item.MACHINE_NO}'
+                    //,'{item.ORDER_NO}'
+                    //,'{item.RESOURCE_NO}'
+                    //,'{item.COMPLETE_QTY}'
+                    //,'{item.QTY}'
+                    //,'{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}'
+                    //,'{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}'
+                    //,'{item.REG_USER}'
+                    //,'{item.REG_DATE.ToString("yyyy-MM-dd HH:mm:ss")}'
+                    //,'{item.UP_USER}'
+                    //,'{item.UP_DATE.ToString("yyyy-MM-dd HH:mm:ss")}')";
+                    cmd.ExecuteNonQuery();
+                }
+
+
+                con.Close();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
         public DataTable USP_WORK_RECYCLE_POP_A10
         (
            string  pRESOURCE_NO    
