@@ -54,3 +54,20 @@ nunit-*.xml
 
 # Build Results of an ATL Project
 SEA_MES/CoFAS.NEW.MES/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SEA_MES/CoFAS.NEW.MES.Core/obj/Debug/CoFAS.NEW.MES.Core.csproj.AssemblyReference.cache
+SEA_MES/CoFAS.NEW.MES.Core/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SEA_MES/CoFAS.NEW.MES.Download/obj/Debug/CoFAS.NEW.MES.Download.csproj.AssemblyReference.cache
+SEA_MES/CoFAS.NEW.MES.Download/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SEA_MES/CoFAS.NEW.MES.DPS/obj/Debug/CoFAS.NEW.MES.DPS.csproj.AssemblyReference.cache
+SEA_MES/CoFAS.NEW.MES.DPS/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SEA_MES/CoFAS.NEW.MES.HS_SI/obj/Debug/CoFAS.NEW.MES.HS_SI.csproj.AssemblyReference.cache
+SEA_MES/CoFAS.NEW.MES.HS_SI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SEA_MES/CoFAS.NEW.MES.Monitoring/obj/Debug/CoFAS.NEW.MES.Monitoring.csproj.AssemblyReference.cache
+SEA_MES/CoFAS.NEW.MES.Monitoring/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SEA_MES/CoFAS.NEW.MES.POP/obj/Debug/CoFAS.NEW.MES.POP.csproj.AssemblyReference.cache
+SEA_MES/CoFAS.NEW.MES.POP/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+SEA_MES/CoFAS.NEW.MES.POP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SEA_MES/CoFAS.NEW.MES.Upload/obj/Debug/CoFAS.NEW.MES.Upload.csproj.AssemblyReference.cache
+SEA_MES/CoFAS.NEW.MES.Upload/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SEA_MES/CoFAS.NEW.MES/obj/Debug/CoFAS.NEW.MES.csproj.AssemblyReference.cache
+SEA_MES/CoFAS.NEW.MES/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
