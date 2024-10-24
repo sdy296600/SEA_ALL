@@ -381,96 +381,9 @@ namespace CoFAS.NEW.MES.POP
                 _p품번 = fpMain.Sheets[0].GetValue(e.Row, "RESOURCE_NO").ToString().Trim();
                 _pLOT = fpMain.Sheets[0].GetValue(e.Row, "LOT").ToString().Trim();
                 _p호기 = fpMain.Sheets[0].GetValue(e.Row, "WORKCENTER").ToString().Trim();
-                _p실적 = string.Empty;
-
-                string sql = $@"SELECT *
-                                 FROM[dbo].[WORK_PERFORMANCE]
-                                 where 1 = 1
-                                 AND LOT_NO = '{_pLOT}'
-                                 AND RESOURCE_NO ='{_p품번}'";
-
-                DataTable pDataTable =  new CoreBusiness().SELECT(sql);
-
-                fpSub.Sheets[0].Rows.Count = 0;
-
-                if (pDataTable != null && pDataTable.Rows.Count > 0)
-                {
-                    fpSub.Sheets[0].Visible = false;
-                    fpSub.Sheets[0].Rows.Count = pDataTable.Rows.Count;
-
-                    for (int i = 0; i < pDataTable.Rows.Count; i++)
-                    {
-                        foreach (DataColumn item in pDataTable.Columns)
-                        {
-                            if (item.ColumnName == "WORK_TIME")
-                            {
-
-                                Double totalSeconds = Convert.ToDouble(pDataTable.Rows[i][item.ColumnName].ToString());
-                                TimeSpan timeSpan = TimeSpan.FromSeconds(totalSeconds);
-
-                                // TimeSpan을 사용하여 시간, 분, 초 형식으로 설정
-                                fpSub.Sheets[0].SetValue(i, item.ColumnName, $"{timeSpan.Hours}시간 {timeSpan.Minutes}분 {timeSpan.Seconds}초");
-                            }
-                            else 
-                            {
-                                fpSub.Sheets[0].SetValue(i, item.ColumnName, pDataTable.Rows[i][item.ColumnName]);
-                            }
-                        }
-                    }
-                    //Core.Function.Core._AddItemSUM(fpSub);
-                    fpSub.Sheets[0].Visible = true;
-
-
-                }
-
-                _품번.Text = "-";
-                _품목명.Text = "-";
-
-                _LOT.Text = "-";
-                _로드셀중량.Text = "0";
-
-                _작업일자.DateTime = DateTime.Now;
-                _지시수량.Text = "-";
-
-                _시작.DateTime = DateTime.Now;
-                _종료.DateTime = DateTime.Now;
-
-                _포장수량.Text = "0";
-                _미포장수량.Text = "0";
-                _총미포장.Text = "0";
-
-                txt_작업인원.Text = "0";
-
-                _간판발행수.Text = "-";
-                _lbl_간판발행.Text = "-";
-                _교대조.Text = "-";
-
-                _작업코드.Text = "-";
-                _금형.Text = "-"; ;
-
-                _상태.Text = "-";
-
-                _lbl_총생산량.Text = "0";
-
-                _양품사용중량.Text = "0";
-                _CAV.Text = "0";
-                _lbl_양품.Text = "0";
-                _lbl_예열타.Text = "0";
-                _lbl_불량.Text = "0";
-
-                _포장수량.Text = "0";
-                _간판발행수.Text = "0";
-                _lbl_간판발행.Text = "0";
-                _용탕투입중량.Text = "0";
-                _미포장수량.Text = "0";
-
-                //그리드 합계 행 추가   
-                //Core.Function.Core._AddItemSUM(fpMain);
-
+                run(_p품번, _pLOT, _p호기);
                 fpMain.ActiveSheet.SetActiveCell(e.Row, e.Column);
                 fpMain.ShowActiveCell(FarPoint.Win.Spread.VerticalPosition.Center, FarPoint.Win.Spread.HorizontalPosition.Center);
-
-
                 fpMain._SelectionChangedEvent(fpMain, null);
             }
             catch (Exception _Exception)
@@ -478,7 +391,97 @@ namespace CoFAS.NEW.MES.POP
                 //CustomMsg.ShowExceptionMessage(_Exception.ToString(), "Error", MessageBoxButtons.OK);
             }
         }
+        public void run(string _p품번, string _pLOT, string _p호기) 
+        {
 
+            _p실적 = string.Empty;
+
+            string sql = $@"SELECT *
+                                 FROM[dbo].[WORK_PERFORMANCE]
+                                 where 1 = 1
+                                 AND LOT_NO = '{_pLOT}'
+                                 AND RESOURCE_NO ='{_p품번}'";
+
+            DataTable pDataTable = new CoreBusiness().SELECT(sql);
+
+            fpSub.Sheets[0].Rows.Count = 0;
+
+            if (pDataTable != null && pDataTable.Rows.Count > 0)
+            {
+                fpSub.Sheets[0].Visible = false;
+                fpSub.Sheets[0].Rows.Count = pDataTable.Rows.Count;
+
+                for (int i = 0; i < pDataTable.Rows.Count; i++)
+                {
+                    foreach (DataColumn item in pDataTable.Columns)
+                    {
+                        if (item.ColumnName == "WORK_TIME")
+                        {
+
+                            Double totalSeconds = Convert.ToDouble(pDataTable.Rows[i][item.ColumnName].ToString());
+                            TimeSpan timeSpan = TimeSpan.FromSeconds(totalSeconds);
+
+                            // TimeSpan을 사용하여 시간, 분, 초 형식으로 설정
+                            fpSub.Sheets[0].SetValue(i, item.ColumnName, $"{timeSpan.Hours}시간 {timeSpan.Minutes}분 {timeSpan.Seconds}초");
+                        }
+                        else
+                        {
+                            fpSub.Sheets[0].SetValue(i, item.ColumnName, pDataTable.Rows[i][item.ColumnName]);
+                        }
+                    }
+                }
+                //Core.Function.Core._AddItemSUM(fpSub);
+                fpSub.Sheets[0].Visible = true;
+
+
+            }
+
+            _품번.Text = "-";
+            _품목명.Text = "-";
+
+            _LOT.Text = "-";
+            _로드셀중량.Text = "0";
+
+            _작업일자.DateTime = DateTime.Now;
+            _지시수량.Text = "-";
+
+            _시작.DateTime = DateTime.Now;
+            _종료.DateTime = DateTime.Now;
+
+            _포장수량.Text = "0";
+            _미포장수량.Text = "0";
+            _총미포장.Text = "0";
+
+            txt_작업인원.Text = "0";
+
+            _간판발행수.Text = "-";
+            _lbl_간판발행.Text = "-";
+            _교대조.Text = "-";
+
+            _작업코드.Text = "-";
+            _금형.Text = "-"; ;
+
+            _상태.Text = "-";
+
+            _lbl_총생산량.Text = "0";
+
+            _양품사용중량.Text = "0";
+            _CAV.Text = "0";
+            _lbl_양품.Text = "0";
+            _lbl_예열타.Text = "0";
+            _lbl_불량.Text = "0";
+
+            _포장수량.Text = "0";
+            _간판발행수.Text = "0";
+            _lbl_간판발행.Text = "0";
+            _용탕투입중량.Text = "0";
+            _미포장수량.Text = "0";
+
+            //그리드 합계 행 추가   
+            //Core.Function.Core._AddItemSUM(fpMain);
+
+           
+        }
         public virtual void fpSub_CellClick(object sender, CellClickEventArgs e)
         {
             try
@@ -1040,6 +1043,7 @@ namespace CoFAS.NEW.MES.POP
                 , _미포장수량.Text
                 , _pLOT
                 , _p실적))
+
                 {
                     if (popup.ShowDialog() == DialogResult.OK)
 
@@ -1051,7 +1055,11 @@ namespace CoFAS.NEW.MES.POP
                             fpSub_CellClick(fpMain, new CellClickEventArgs(null, i, 0, 0, 0, System.Windows.Forms.MouseButtons.Left, false, false));
                         }
                     }
+                    조회.PerformClick();
+                    run(_p품번, _pLOT, _p호기);
                 }
+
+                this.간판_Click(_p실적,e);
             }
         }
         private void 저장_Click(object sender, EventArgs e)

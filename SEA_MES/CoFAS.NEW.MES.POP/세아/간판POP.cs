@@ -225,6 +225,7 @@ namespace CoFAS.NEW.MES.POP
                             print(라벨);
                             
                         }
+
                         string sql = $@"SELECT                       
                           ISNULL(SUM(ISNULL(P_QTY,0)),0) AS P_QTY
                            FROM [HS_MES].[dbo].[PRODUCT_BARCODE]
@@ -246,7 +247,8 @@ namespace CoFAS.NEW.MES.POP
                     }
                 }
             }
-            catch(Exception err)
+
+            catch (Exception err)
             {
 
             }
