@@ -442,7 +442,7 @@ namespace CoFAS.NEW.MES.POP
                 txt_작업인원.Text = "0";
 
                 _간판발행수.Text = "-";
-                _lbl_간편발행.Text = "-";
+                _lbl_간판발행.Text = "-";
                 _교대조.Text = "-";
 
                 _작업코드.Text = "-";
@@ -460,7 +460,7 @@ namespace CoFAS.NEW.MES.POP
 
                 _포장수량.Text = "0";
                 _간판발행수.Text = "0";
-                _lbl_간편발행.Text = "0";
+                _lbl_간판발행.Text = "0";
                 _용탕투입중량.Text = "0";
                 _미포장수량.Text = "0";
 
@@ -607,7 +607,7 @@ namespace CoFAS.NEW.MES.POP
 
                     _포장수량.Text = pDataTable6.Rows[0]["포장수량       ".Trim()].ToString();
                     _간판발행수.Text = pDataTable6.Rows[0]["간판발행수    ".Trim()].ToString();
-                    _lbl_간편발행.Text = pDataTable6.Rows[0]["간판발행수    ".Trim()].ToString();
+                    _lbl_간판발행.Text = pDataTable6.Rows[0]["간판발행수    ".Trim()].ToString();
                     _미포장수량.Text = (Convert.ToInt32(_lbl_양품.Text) - Convert.ToInt32(_포장수량.Text)).ToString();
 
                     sql = $@"SELECT ISNULL(SUM(WEIGHT),0) AS 중량,TYPE
