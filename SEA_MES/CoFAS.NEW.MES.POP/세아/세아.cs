@@ -464,6 +464,7 @@ namespace CoFAS.NEW.MES.POP
                 _용탕투입중량.Text = "0";
                 _미포장수량.Text = "0";
 
+                //그리드 합계 행 추가   
                 //Core.Function.Core._AddItemSUM(fpMain);
 
                 fpMain.ActiveSheet.SetActiveCell(e.Row, e.Column);
@@ -494,11 +495,16 @@ namespace CoFAS.NEW.MES.POP
                         row = i;
                     }
                 }
+
+                //그리드 합계 행 추가   
+                Core.Function.Core._AddItemSUM(fpSub);
+
                 _lbl_총생산량.Text = "0";
                 _lbl_양품.Text = "0";
                 _lbl_예열타.Text = "0";
                 _lbl_불량.Text = "0";
                 _미포장수량.Text = "0";
+                _총미포장.Text = "0";
 
                 _품번.Text = fpMain.Sheets[0].GetValue(row, "RESOURCE_NO ".Trim()).ToString().Trim();
                 _품목명.Text = fpMain.Sheets[0].GetValue(row, "DESCRIPTION ".Trim()).ToString().Trim();
@@ -1102,7 +1108,7 @@ namespace CoFAS.NEW.MES.POP
                     _교대조.Text = "야간";
                 }
 
-                int comQty = (Convert.ToInt32(_간판발행수.Text) * Convert.ToInt32(_포장수량.Text));
+                int comQty =  Convert.ToInt32(_포장수량.Text);
                 DateTime dateTime = DateTime.Now;
                 DataTable dt = new MS_DBClass(utility.My_Settings_Get()).USP_WorkPerformance_A10(
                   _p호기  
