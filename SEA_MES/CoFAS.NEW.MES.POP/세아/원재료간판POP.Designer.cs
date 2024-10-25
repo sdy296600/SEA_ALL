@@ -35,13 +35,13 @@ namespace CoFAS.NEW.MES.POP
             this._Title = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.base_FromtoDateTime1 = new CoFAS.NEW.MES.Core.Base_FromtoDateTime();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_생성 = new System.Windows.Forms.Button();
             this.btn_조회 = new System.Windows.Forms.Button();
             this.btn_출력 = new System.Windows.Forms.Button();
             this.btn_닫기 = new System.Windows.Forms.Button();
+            this.base_FromtoDateTime1 = new CoFAS.NEW.MES.Core.Base_FromtoDateTime();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -164,19 +164,6 @@ namespace CoFAS.NEW.MES.POP
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1272, 985);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // base_FromtoDateTime1
-            // 
-            this.base_FromtoDateTime1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(142)))), ((int)(((byte)(172)))));
-            this.base_FromtoDateTime1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.base_FromtoDateTime1.EndValue = new System.DateTime(2024, 10, 31, 23, 59, 0, 0);
-            this.base_FromtoDateTime1.Location = new System.Drawing.Point(560, 0);
-            this.base_FromtoDateTime1.Margin = new System.Windows.Forms.Padding(0);
-            this.base_FromtoDateTime1.Name = "base_FromtoDateTime1";
-            this.base_FromtoDateTime1.SearchName = "날짜";
-            this.base_FromtoDateTime1.Size = new System.Drawing.Size(337, 68);
-            this.base_FromtoDateTime1.StartValue = new System.DateTime(2024, 10, 1, 0, 0, 0, 0);
-            this.base_FromtoDateTime1.TabIndex = 9;
-            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 9;
@@ -259,6 +246,19 @@ namespace CoFAS.NEW.MES.POP
             this.btn_닫기.Text = "닫기";
             this.btn_닫기.UseVisualStyleBackColor = true;
             this.btn_닫기.Click += new System.EventHandler(this.닫기_Click);
+            // 
+            // base_FromtoDateTime1
+            // 
+            this.base_FromtoDateTime1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(142)))), ((int)(((byte)(172)))));
+            this.base_FromtoDateTime1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.base_FromtoDateTime1.EndValue = new System.DateTime(2024, 10, 31, 23, 59, 0, 0);
+            this.base_FromtoDateTime1.Location = new System.Drawing.Point(560, 0);
+            this.base_FromtoDateTime1.Margin = new System.Windows.Forms.Padding(0);
+            this.base_FromtoDateTime1.Name = "base_FromtoDateTime1";
+            this.base_FromtoDateTime1.SearchName = "날짜";
+            this.base_FromtoDateTime1.Size = new System.Drawing.Size(337, 68);
+            this.base_FromtoDateTime1.StartValue = new System.DateTime(2024, 10, 1, 0, 0, 0, 0);
+            this.base_FromtoDateTime1.TabIndex = 9;
             // 
             // tableLayoutPanel5
             // 
@@ -355,7 +355,7 @@ namespace CoFAS.NEW.MES.POP
             this.txt_총중량.PasswordChar = '\0';
             this.txt_총중량.ReadOnly = false;
             this.txt_총중량.Size = new System.Drawing.Size(288, 36);
-            this.txt_총중량.TabIndex = 7;
+            this.txt_총중량.TabIndex = 11;
             this.txt_총중량.TextAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.txt_총중량.ToolTipt = "";
             this.txt_총중량.UseMaskAsDisplayFormat = false;
@@ -378,7 +378,7 @@ namespace CoFAS.NEW.MES.POP
             this.txt_번들수.PasswordChar = '\0';
             this.txt_번들수.ReadOnly = false;
             this.txt_번들수.Size = new System.Drawing.Size(288, 36);
-            this.txt_번들수.TabIndex = 8;
+            this.txt_번들수.TabIndex = 12;
             this.txt_번들수.TextAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.txt_번들수.ToolTipt = "";
             this.txt_번들수.UseMaskAsDisplayFormat = false;
@@ -434,7 +434,7 @@ namespace CoFAS.NEW.MES.POP
             this.txt_lot.PasswordChar = '\0';
             this.txt_lot.ReadOnly = false;
             this.txt_lot.Size = new System.Drawing.Size(288, 36);
-            this.txt_lot.TabIndex = 12;
+            this.txt_lot.TabIndex = 13;
             this.txt_lot.TextAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.txt_lot.ToolTipt = "";
             this.txt_lot.UseMaskAsDisplayFormat = false;
@@ -466,7 +466,7 @@ namespace CoFAS.NEW.MES.POP
             this.txt_비고.PasswordChar = '\0';
             this.txt_비고.ReadOnly = false;
             this.txt_비고.Size = new System.Drawing.Size(288, 165);
-            this.txt_비고.TabIndex = 13;
+            this.txt_비고.TabIndex = 14;
             this.txt_비고.TextAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.txt_비고.ToolTipt = "";
             this.txt_비고.UseMaskAsDisplayFormat = false;

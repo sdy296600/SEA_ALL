@@ -212,7 +212,7 @@ namespace CoFAS.NEW.MES.POP
                 ,txt_lot.Text
                 ,txt_비고.Text
                 );
-                return;
+                //return;
                 if (dt != null)
                 {
 
@@ -240,6 +240,7 @@ namespace CoFAS.NEW.MES.POP
 
         private void print(원재료간판라벨 라벨)
         {
+            //string printerName = "SEC842519C27EA8(C56x Series)"; // 프린터 이름으로 변경하세요
             string printerName = "ZDesigner GT800 (EPL)"; // 프린터 이름으로 변경하세요
             //string printerName = "ZDesigner GT800 (EPL) (1 복사)";
             string zplCommand = string.Empty;
