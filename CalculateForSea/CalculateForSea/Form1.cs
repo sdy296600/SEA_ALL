@@ -217,7 +217,7 @@ namespace CalculateForSea
             }
             else if (topic.Contains("DW"))
             {
-                if (gridModels_DCM[index2].트리거 == "0")
+                if (gridModels_DCM[index2].트리거 == "1")
                 {
 
                     if (topic.Contains("DW816") || topic.Contains("DW186"))
@@ -247,30 +247,30 @@ namespace CalculateForSea
                 }
                 else
                 {
-                    if (topic.Contains("DW816") || topic.Contains("DW186"))
-                    {
-                        gridModels_DCM[index2].금형내부 = "0";
-                        dm_alram_status_update(gridModels_DCM[index2].금형내부, topic.Split('/')[1]);
+                    //if (topic.Contains("DW816") || topic.Contains("DW186"))
+                    //{
+                    //    gridModels_DCM[index2].금형내부 = "0";
+                    //    dm_alram_status_update(gridModels_DCM[index2].금형내부, topic.Split('/')[1]);
 
-                    }
-                    if (topic.Contains("DW817") || topic.Contains("DW187"))
-                    {
-                        gridModels_DCM[index2].오염도A = "0";
-                        dm_alram_status_update(gridModels_DCM[index2].오염도A, topic.Split('/')[1]);
+                    //}
+                    //if (topic.Contains("DW817") || topic.Contains("DW187"))
+                    //{
+                    //    gridModels_DCM[index2].오염도A = "0";
+                    //    dm_alram_status_update(gridModels_DCM[index2].오염도A, topic.Split('/')[1]);
 
-                    }
-                    if (topic.Contains("DW818") || topic.Contains("DW188"))
-                    {
-                        gridModels_DCM[index2].오염도B = "0";
-                        dm_alram_status_update(gridModels_DCM[index2].오염도B, topic.Split('/')[1]);
+                    //}
+                    //if (topic.Contains("DW818") || topic.Contains("DW188"))
+                    //{
+                    //    gridModels_DCM[index2].오염도B = "0";
+                    //    dm_alram_status_update(gridModels_DCM[index2].오염도B, topic.Split('/')[1]);
 
-                    }
-                    if (topic.Contains("DW819") || topic.Contains("DW189"))
-                    {
-                        gridModels_DCM[index2].탱크진공 = "0";
-                        dm_alram_status_update(gridModels_DCM[index2].탱크진공, topic.Split('/')[1]);
+                    //}
+                    //if (topic.Contains("DW819") || topic.Contains("DW189"))
+                    //{
+                    //    gridModels_DCM[index2].탱크진공 = "0";
+                    //    dm_alram_status_update(gridModels_DCM[index2].탱크진공, topic.Split('/')[1]);
 
-                    }
+                    //}
                 }
             }
         }
